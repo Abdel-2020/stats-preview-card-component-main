@@ -28,8 +28,26 @@ p{
 }
 
 .card-container{
-    background-color: var(--dark-desaturated-blue);
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    align-content: center;
+    width:70vw;
+    margin:20vh auto;
 }
+
+.content-section{
+    background-color: var(--dark-desaturated-blue);
+    width:540px;
+    height:100%;
+    border-radius: 10px 0 0 10px;
+    padding: 60px 50px 30px ;
+}
+
+.content-section >*{
+width: 400px;
+}
+
 
 
 /*End of General Styling*/
@@ -40,6 +58,7 @@ p{
 
 
 .card-title{
+    margin-top: 10px;
     font-family:'Inter', sans-serif;
     color: var(--white);
     font-size: 2rem;
@@ -52,14 +71,23 @@ p{
 
 
 .card-text{
+    margin:40px 0;
     font-family:'Inter', sans-serif;
     color:var(--slightly-trasnparent-white-paragraph);
     font-weight: 400;
+    line-height: 1.7rem;
+  
 }
 
 /*End of Card Heading/Text Section*/
 
 /*Stat Section*/
+.stat-section{
+margin-top: 100px;
+display: flex;
+justify-content: space-between;
+}
+
 .stat-title{
     font-family:'inter', sans-serif; 
     color:var(--white);
@@ -67,9 +95,19 @@ p{
 }
 
 .stat-text{
+    font-size:0.8em;
     font-family:'Lexend Deca', sans-serif; 
     color:var(--slightly-transparent-white-stat-text);
     font-weight: 400;
     text-transform: uppercase;
+    padding:5px 0;
+    letter-spacing: 1px;
 }
 /*End of Stat Section*/
+
+/*Image Section*/
+.card-image{
+height: 100%;
+border-radius: 0 10px 10px 0;
+}
+/*End of Image Section*/
